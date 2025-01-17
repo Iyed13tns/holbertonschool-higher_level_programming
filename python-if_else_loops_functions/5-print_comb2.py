@@ -8,3 +8,4 @@ for i in range(0, 100):
         i = "{:02d}".format(i)
         end = ", "
     print(i, end=end)
+    
