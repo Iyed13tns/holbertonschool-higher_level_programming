@@ -2,4 +2,4 @@ class Square:
     pass
 my_square = Square()
 
-print(my_square)
+print('my_square')
