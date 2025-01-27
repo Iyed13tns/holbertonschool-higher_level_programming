@@ -1,7 +1,5 @@
-class square:
+class Square:
     pass
-ob1 = square()
-ob2 = square()
+my_square = Square()
 
-print(ob1)
-print(ob2)
+print(my_square)
