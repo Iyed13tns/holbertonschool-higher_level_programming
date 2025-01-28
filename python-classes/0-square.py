@@ -1,6 +1,9 @@
 #!/usr/bin/python3
-
-# Définition de la classe Square
+  """
+  Definition of the Square class
+  """
 class Square:
-    # La classe ne contient actuellement aucune méthode ni attribut
+    """
+    The class currently contains no methods or attributes
+    """
     pass

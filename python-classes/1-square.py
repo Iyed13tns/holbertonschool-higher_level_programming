@@ -1,11 +1,17 @@
 #!/usr/bin/python3
-
-# Définition de la classe Square
+  """
+  Definition of the Square class
+  """
 class Square:
-    # Déclaration de l'attribut privé __size, qui n'est pas encore initialisé
+    """
+     Declaration of the private attribute __size, which is not yet initialized
+    """   
     __size = None
-
-    # Constructeur de la classe Square
+      """
+      Constructor of the Square class
+      """   
     def __init__(self, size):
-        # Initialisation de l'attribut __size avec la valeur fournie lors de la création de l'objet
+          """
+          Initializing the __size attribute with the value provided during object creation
+          """
         self.__size = size
