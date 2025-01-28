@@ -22,5 +22,7 @@ class Square:
           """
           Initializing the __size attribute with the value provided during object creation
           """
-    
-    self.__size = size
+          
+          
+          self.__size = size
+          
