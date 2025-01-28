@@ -1,4 +1,6 @@
 #!/usr/bin/python3
-my_square = Square(3)
-print(type(my_square))
-print(my_square.__dict__)
+class Square:
+    __size = None
+
+def __init__(self, size):
+    self.__size = size
