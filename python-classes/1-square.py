@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-
 """
-  Definition of the Square class
-  """
+Definition of the Square class
+"""
 class Square:
     """
     Declaration of the private attribute __size, which is not yet initialized
