@@ -6,14 +6,14 @@ Definition of the Square class
 
 class Square:
     """
-    Declaration of the private attribute __size, which is not yet initialized
-    """   
-    __size = None
+    Represents a square with a private size attribute
     """
-      Constructor of the Square class
-    """   
+
     def __init__(self, size):
-          """
-          Initializing the __size attribute with the value provided during object creation
-          """
-          self.__size = size
+        """
+        Initializes a Square instance with a private size attribute
+
+        Args:
+            size: The size of the square
+        """
+        self.__size = size
