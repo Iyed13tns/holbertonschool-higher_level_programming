@@ -4,5 +4,4 @@
 
 class Rectangle:
     """ The class currently contains no methods or attributes """
-    def __init__(self):
-        self
+    pass
