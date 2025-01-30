@@ -8,4 +8,5 @@ class Rectangle:
     """
     The class currently contains no methods or attributes
     """
-    pass
+    def __init__(self):
+        self
