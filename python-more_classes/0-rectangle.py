@@ -1,12 +1,8 @@
 #!/usr/bin/python3
-"""
-Definition of the Rectangle class
-"""
+""" Definition of the Rectangle class """
 
 
 class Rectangle:
-    """
-    The class currently contains no methods or attributes
-    """
+    """ The class currently contains no methods or attributes """
     def __init__(self):
         self
