@@ -6,5 +6,6 @@ def read_file(filename=""):
     
     :param filename: Nom du fichier à lire (par défaut, chaîne vide)
     """
-    with open(filename, 'r', encoding='utf-8') as file:
-         file.read(filename)
+    with open(filename, 'r', encoding = 'utf-8') as file:
+         file.read()
+         print(filename)
