@@ -2,9 +2,9 @@
 
 def read_file(filename=""):  
     """
-    Fonction qui lit un fichier et affiche son contenu.
+    Function that reads a file and prints its content.
     
-    :param filename: Nom du fichier à lire (par défaut, chaîne vide)
+    :param filename: Name of the file to read (default is an empty string)
     """
     with open(filename, 'r', encoding='utf-8') as file:
          content = file.read()
