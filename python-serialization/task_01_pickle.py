@@ -10,7 +10,11 @@ class CustomObject:
         self.age = age
         self.is_student = is_student
 
-    
+    def display(self):
+        """Print out the attributes of the object."""
+        for key in self.__dict__:
+            print("{}: {}".format(key.capitalize(), self.__dict__[key]))
+
     def serialize(self, filename):
         """serialize the current instance of the object
         and save it to the provided filename"""
