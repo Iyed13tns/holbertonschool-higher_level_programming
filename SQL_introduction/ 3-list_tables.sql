@@ -1,3 +1,3 @@
--- Script to list all tables in a database
--- The database name will be passed as an argument to the mysql command
-SHOW TABLES;
+-- List all tables in the specified database
+SHOW TABLES FROM hbtn_0c_0;
+
