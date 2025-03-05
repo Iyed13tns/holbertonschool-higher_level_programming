@@ -1,3 +1,2 @@
--- Display the full table first_table
-PRINTS TABLE first_table
-FROM hbtn_0c_0
+-- print table structure
+SHOW CREATE TABLE first_table;
