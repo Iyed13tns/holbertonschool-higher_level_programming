@@ -2,14 +2,12 @@
 import sys
 
 
-def main(*argv):
-    l = len(sys.argv)
-    sum = 0
-    if l > 1:
-        for args in sys.argv:
-            if args != sys.argv[0]:
-                sum = sum + int(args)
-    print(sum)
+def infinite_add():
+    total = 0
+    for arg in sys.argv[1:]:  # Ignore le premier argument (nom du script)
+        total += int(arg)
+    print(total)
+
 
 if __name__ == "__main__":
-    main()
+    infinite_add()
