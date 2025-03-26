@@ -1,7 +1,11 @@
+#!/usr/bin/python3
+"""
+This module contains a script that safely filters states from a database based on
+user input, preventing SQL injection.
+"""
+
 import MySQLdb
 import sys
-
-#!/usr/bin/python3
 
 if __name__ == "__main__":
     # Get MySQL credentials and state name from command line arguments
@@ -11,7 +15,13 @@ if __name__ == "__main__":
     state_name = sys.argv[4]
 
     # Connect to the MySQL database
-    db = MySQLdb.connect(host="localhost", port=3306, user=mysql_username, passwd=mysql_password, db=database_name)
+    db = MySQLdb.connect(
+        host="localhost",
+        port=3306,
+        user=mysql_username,
+        passwd=mysql_password,
+        db=database_name
+    )
 
     # Create a cursor object to interact with the database
     cursor = db.cursor()
