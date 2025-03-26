@@ -1,25 +1,22 @@
 #!/usr/bin/python3
+"""
+This module contains a script that selects states from a database.
+"""
+
 import MySQLdb
 import sys
 
-#!/usr/bin/python3
-
 if __name__ == "__main__":
-    # Get MySQL credentials and database name from command line arguments
-    username = sys.argv[1]
-    password = sys.argv[2]
-    db_name = sys.argv[3]
+    # Connect to the database
+    db = MySQLdb.connect(host="localhost", user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
 
-    # Connect to the MySQL server
-    db = MySQLdb.connect(host="localhost", port=3306, user=username, passwd=password, db=db_name)
-
-    # Create a cursor object to interact with the database
+    # Create a cursor object
     cursor = db.cursor()
 
-    # Execute the SQL query to select all states
+    # Execute the query
     cursor.execute("SELECT * FROM states ORDER BY id ASC")
 
-    # Fetch all the rows from the executed query
+    # Fetch all the rows
     rows = cursor.fetchall()
 
     # Print each row
