@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-This module contains a script that filters states from a database based on user input.
+This module contains a script that filters states from a database based on
+user input.
 """
 
 import MySQLdb
