@@ -1,12 +1,21 @@
+#!/usr/bin/python3
+"""
+Script that takes in the name of a state as an argument and lists all cities of that state
+from the database hbtn_0e_4_usa, using parameterized queries for security.
+"""
 import sys
 import MySQLdb
-
-#!/usr/bin/python3
 
 if __name__ == "__main__":
     username, password, dbname, state_name = sys.argv[1:5]
 
-    db = MySQLdb.connect(host="localhost", port=3306, user=username, passwd=password, db=dbname)
+    db = MySQLdb.connect(
+        host="localhost", 
+        port=3306, 
+        user=username, 
+        passwd=password, 
+        db=dbname
+    )
     cur = db.cursor()
     query = """
     SELECT cities.name 
