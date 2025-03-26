@@ -1,10 +1,9 @@
-import MySQLdb
-import sys
-
 #!/usr/bin/python3
 """
 Script that lists all cities from the database hbtn_0e_4_usa
 """
+import MySQLdb
+import sys
 
 
 if __name__ == "__main__":
@@ -33,9 +32,11 @@ if __name__ == "__main__":
         ORDER BY cities.id ASC
     """)
 
-    # Fetch and print all results
-    results = cursor.fetchall()
-    for row in results:
+    # Fetch all rows
+    rows = cursor.fetchall()
+
+    # Print results
+    for row in rows:
         print(row)
 
     # Close cursor and database connection
