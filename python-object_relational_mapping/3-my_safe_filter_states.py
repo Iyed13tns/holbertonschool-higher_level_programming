@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-This module contains a script that safely filters states from a database based on
-user input, preventing SQL injection.
+This module contains a script that safely filters states from a database based
+on user input, preventing SQL injection.
 """
 
 import MySQLdb
