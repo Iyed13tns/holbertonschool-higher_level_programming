@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Script that lists all State objects from the database hbtn_0e_6_usa using SQLAlchemy.
+Script that lists all State objects from the database hbtn_0e_6_usa
+using SQLAlchemy.
 """
 from sys import argv
 from sqlalchemy import create_engine
@@ -12,7 +13,9 @@ if __name__ == "__main__":
     password = argv[2]
     db_name = argv[3]
 
-    engine = create_engine(f'mysql+mysqldb://{username}:{password}@localhost:3306/{db_name}')
+    engine = create_engine(
+        f'mysql+mysqldb://{username}:{password}@localhost:3306/{db_name}'
+    )
     Base.metadata.create_all(engine)
 
     Session = sessionmaker(bind=engine)
