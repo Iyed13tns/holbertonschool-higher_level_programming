@@ -1,9 +1,11 @@
+#!/usr/bin/python3
+"""
+Script that lists all State objects from the database hbtn_0e_6_usa using SQLAlchemy.
+"""
 from sys import argv
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
-
-#!/usr/bin/python3
 
 if __name__ == "__main__":
     username = argv[1]
