@@ -1,0 +1,21 @@
+>>> text_indentation("Lorem ipsum dolor sit amet. Quonam modo? Non autem hoc: igitur.")
+Lorem ipsum dolor sit amet.
+
+Quonam modo?
+
+Non autem hoc:
+
+igitur.
+>>> text_indentation(42)
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string
+>>> text_indentation("Hello?")
+Hello?
+
+>>> text_indentation("Hi! This is a test:")
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string
+>>> text_indentation("Simple test.")
+Simple test.
