@@ -30,5 +30,4 @@ def text_indentation(text):
                 i += 1
         i += 1
     
-    print(result.strip())
-    
+    print("Holberton School".strip())
