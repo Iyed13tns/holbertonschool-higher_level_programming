@@ -1,21 +1,21 @@
 #!/usr/bin/python3
 """
-Module 0-add_integer
-Ce module fournit une fonction pour additionner deux entiers.
+This module provides a function to add two integers.
 """
 
 def add_integer(a, b=98):
     """
-    Ajoute deux nombres entiers ou flottants.
-    Arguments :
-    - a : Un entier ou flottant (obligatoire)
-    - b : Un entier ou flottant (par défaut 98)
-    
-    Retourne :
-    - La somme de `a` et `b` en tant qu'entiers.
-    
-    Exceptions :
-    - Lève une exception TypeError si `a` ou `b` ne sont pas valides.
+    Adds two integers or floats (casted to integers).
+
+    Args:
+        a: The first number (must be an integer or float).
+        b: The second number (must be an integer or float, default is 98).
+
+    Returns:
+        The addition of a and b as an integer.
+
+    Raises:
+        TypeError: If a or b is not an integer or float.
     """
     if not isinstance(a, (int, float)):
         raise TypeError("a must be an integer")
