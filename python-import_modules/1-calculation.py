@@ -1,11 +1,16 @@
 #!/usr/bin/python3
-from calculator_1 import add, sub, mul, div
+def add(a, b):
+    return a + b
 
-if __name__ == "__main__":
+def sub(a, b):
+    return a - b
 
-    a = 10
-    b = 5
+def mul(a, b):
+    return a * b
 
-    print("{} + {} = {}".format(a, b, add(a, b)))
-    print("{} - {} = {}".format(a, b, sub(a, b)))
-    print("{} * {} = {}".format(a, b, mul(a, b)))
+def div(a, b):
+    if b != 0:
+        return a / b
+    else:
+        raise ValueError("Division by zero is not allowed")
+    
