@@ -1,6 +1,6 @@
+#!/usr/bin/python3
 import sys
 
-#!/usr/bin/python3
 if __name__ == "__main__":
 
     # Sum all arguments converted to integers
