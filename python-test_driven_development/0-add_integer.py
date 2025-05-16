@@ -1,8 +1,9 @@
 #!/usr/bin/python3
+
 """
 This module provides a function to add two integers.
 
-The function ensures that inputs are integers or floats,
+It ensures that inputs are integers or floats,
 and raises a TypeError if they are not.
 """
 
