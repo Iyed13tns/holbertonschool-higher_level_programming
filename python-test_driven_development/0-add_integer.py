@@ -7,6 +7,7 @@ It ensures that inputs are integers or floats,
 and raises a TypeError if they are not.
 """
 
+
 def add_integer(a, b=98):
    
     """
