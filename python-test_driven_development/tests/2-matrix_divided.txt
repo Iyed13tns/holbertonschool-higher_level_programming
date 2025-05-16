@@ -22,6 +22,16 @@
 >>> matrix_divided(matrix, 3)
 [[0.33, 0.67, 1.0]]
 
+>>> matrix = []
+>>> matrix_divided(matrix, 2)
+Traceback (most recent call last):
+    ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+>>> matrix = [[1], [2], [3]]
+>>> matrix_divided(matrix, 1)
+[[1.0], [2.0], [3.0]]
+
 # Invalid cases
 >>> matrix_divided("not a matrix", 2)
 Traceback (most recent call last):
