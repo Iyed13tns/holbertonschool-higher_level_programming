@@ -1,59 +1,61 @@
+Test cases for matrix_divided function
+
 >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
 
-# Valid cases
->>> matrix = [[1, 2, 3], [4, 5, 6]]
->>> matrix_divided(matrix, 3)
+Matrix with integers
+>>> matrix_divided([[1, 2, 3], [4, 5, 6]], 3)
 [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
 
->>> matrix = [[1.5, 2.5], [3.5, 4.5]]
->>> matrix_divided(matrix, 2)
-[[0.75, 1.25], [1.75, 2.25]]
 
->>> matrix = [[1, 2], [3, 4]]
->>> matrix_divided(matrix, 1)
-[[1.0, 2.0], [3.0, 4.0]]
+Matrix with floats
+>>> matrix_divided([[1.3, 2.2, 3.1], [4.6, 5.5, 6.4]], 3)
+[[0.43, 0.73, 1.03], [1.53, 1.83, 2.13]]
 
-# Edge cases
->>> matrix = [[1]]
->>> matrix_divided(matrix, 2)
-[[0.5]]
 
->>> matrix = [[1, 2, 3]]
->>> matrix_divided(matrix, 3)
-[[0.33, 0.67, 1.0]]
-
->>> matrix = []
->>> matrix_divided(matrix, 2)
+if matrix is not list of lists
+>>> matrix_divided([1, 2, 3, 4, 5, 6], 3)
 Traceback (most recent call last):
     ...
 TypeError: matrix must be a matrix (list of lists) of integers/floats
 
->>> matrix = [[1], [2], [3]]
->>> matrix_divided(matrix, 1)
-[[1.0], [2.0], [3.0]]
 
-# Invalid cases
->>> matrix_divided("not a matrix", 2)
+if elements in lists are not int/float
+>>> matrix_divided([['H', 2, 3], ["School", None, 6]], 3)
 Traceback (most recent call last):
     ...
 TypeError: matrix must be a matrix (list of lists) of integers/floats
 
->>> matrix_divided([[1, 2], [3, "4"]], 2)
-Traceback (most recent call last):
-    ...
-TypeError: matrix must be a matrix (list of lists) of integers/floats
 
->>> matrix_divided([[1, 2], [3]], 2)
+if rows ar not the same size
+>>> matrix_divided([[1, 2, 3], [4, 5]], 3)
 Traceback (most recent call last):
     ...
 TypeError: Each row of the matrix must have the same size
 
->>> matrix_divided([[1, 2], [3, 4]], "2")
+
+if div is not a int/float
+>>> matrix_divided([[1, 2, 3], [4, 5, 6]], "School")
 Traceback (most recent call last):
     ...
 TypeError: div must be a number
 
->>> matrix_divided([[1, 2], [3, 4]], 0)
+
+if div is 0
+>>> matrix_divided([[1, 2, 3], [4, 5, 6]], 0)
 Traceback (most recent call last):
     ...
 ZeroDivisionError: division by zero
+
+
+if div not passed
+>>> matrix_divided([[1, 2, 3], [4, 5, 6]])
+Traceback (most recent call last):
+    ...
+TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+
+if matrix is None
+>>> matrix_divided(None, 3)
+Traceback (most recent call last):
+    ...
+TypeError: 'NoneType' object is not iterable
