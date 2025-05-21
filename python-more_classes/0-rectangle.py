@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-creat classe Rectangle
+create classe Rectangle
 '''
 
 
