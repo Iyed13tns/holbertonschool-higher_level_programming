@@ -3,6 +3,5 @@
 create class Rectangle
 '''
 
-
 class Rectangle:
     pass
