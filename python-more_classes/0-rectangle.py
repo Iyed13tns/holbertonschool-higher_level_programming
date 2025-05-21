@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 '''
-create classe Rectangle
+create class Rectangle
 '''
 
 
 class Rectangle:
-      pass
+    pass
