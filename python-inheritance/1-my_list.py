@@ -5,8 +5,11 @@ F
 
 
 class MyList(list):
-    '''
-    u
-    '''
+    """
+    m
+    """
     def print_sorted(self):
+        """
+        d
+        """
         print(sorted(self))
