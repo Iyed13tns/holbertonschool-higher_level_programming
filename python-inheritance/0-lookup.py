@@ -11,5 +11,4 @@ def lookup(obj):
  this foction return list
  """   
  
- dir(list)
-
+ return dir(obj)
