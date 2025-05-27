@@ -5,12 +5,8 @@ This module defines an empty class BaseGeometry
 
 
 class BaseGeometry:
-    """
-    jj
-    """
-def area(self):
-    """
-    j
-    """
-    raise Exception("area() is not implemented")
-
+    def area(self):
+        '''
+        h
+        '''
+        raise Exception("area() is not implemented")
