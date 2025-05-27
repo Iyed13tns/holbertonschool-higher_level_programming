@@ -1,8 +1,11 @@
 #!/usr/bin/python3
 '''
-h
+This module defines an empty class BaseGeometry
 '''
 
 
 class BaseGeometry:
+    """
+    jj
+    """
     pass
