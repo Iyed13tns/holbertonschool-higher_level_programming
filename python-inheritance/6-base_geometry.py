@@ -5,6 +5,9 @@ This module defines an empty class BaseGeometry
 
 
 class BaseGeometry:
+    '''
+    f
+    '''
     def area(self):
         '''
         h
