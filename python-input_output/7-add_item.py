@@ -15,5 +15,10 @@ if path.exists(filename):
 else:
     items = []
 
+print("Arguments:", sys.argv[1:])
+print("Items before:", items)
+
 items.extend(sys.argv[1:])
 save_to_json_file(items, filename)
+
+print("Items after:", items)
