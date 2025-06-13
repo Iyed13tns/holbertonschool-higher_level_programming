@@ -15,6 +15,8 @@ def home():
 @app.route('/data')
 def get_data():
     # Retourne la liste des noms d'utilisateurs
+    if not users:
+        return jsonify({"message": "No users found"}), 404
     usernames = list(users.keys())
     return jsonify(usernames)
 
