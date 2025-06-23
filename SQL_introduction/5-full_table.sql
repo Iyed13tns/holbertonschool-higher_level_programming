@@ -1,9 +1,8 @@
--- This SQL query retrieves the name and creation statement of a specific table named 'first_table' in the current database.
-SELECT 
-    TABLE_NAME AS 'Table',
-    CREATE_TABLE AS 'Create Table'
-FROM 
-    INFORMATION_SCHEMA.TABLES
-WHERE 
-    TABLE_SCHEMA = DATABASE() 
-    AND TABLE_NAME = 'first_table';
+-- This script creates the first_table with the desired structure.
+CREATE TABLE IF NOT EXISTS first_table (
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(128) DEFAULT NULL,
+    c CHAR(1) DEFAULT NULL,
+    created_at DATE DEFAULT NULL,
+    PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
