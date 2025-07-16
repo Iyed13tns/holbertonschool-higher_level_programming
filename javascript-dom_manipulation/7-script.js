@@ -1,4 +1,3 @@
-// Fetch the data from the API
 fetch('https://swapi-api.hbtn.io/api/films/?format=json')
     .then(response => {
         if (!response.ok) {
@@ -7,7 +6,7 @@ fetch('https://swapi-api.hbtn.io/api/films/?format=json')
         return response.json();
     })
     .then(data => {
-        
+
         const movies = data.results;
         const listMovies = document.getElementById('list_movies');
 
